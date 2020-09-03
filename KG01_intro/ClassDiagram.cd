@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="KG01_intro.klasser.Canvas">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>klasser\Canvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KG01_intro.klasser.Circle">
+    <Position X="7" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>klasser\Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KG01_intro.klasser.CircleDrawer">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAoAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>klasser\CircleDrawer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KG01_intro.klasser.CircleProgram">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>klasser\CircleProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

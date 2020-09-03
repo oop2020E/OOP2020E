@@ -10,6 +10,7 @@ namespace KG01_intro
     {
         public void Run()
         {
+            //INTROTODO 05 Intro til syntax og miljø
             #region Syntax og miljø
             /* kommer løbende 
              * -- programmet køres med en af følgende:
@@ -57,13 +58,12 @@ namespace KG01_intro
 
             #endregion
 
-
             #region Kontrolstrukturer og metoder
 
             #region Metoder og selektive
 
-            Console.WriteLine(Fib1(10));
-            Console.WriteLine(Fib2(10)); 
+            //Console.WriteLine(Fib1(10));
+            //Console.WriteLine(Fib2(10)); 
 
             #endregion
 
@@ -82,7 +82,7 @@ namespace KG01_intro
 
             while (true)
             {
-                Console.WriteLine("Uendeligt loop? -- vi bruger break");
+                //Console.WriteLine("Uendeligt loop? -- vi bruger break");
                 break;
             }
 

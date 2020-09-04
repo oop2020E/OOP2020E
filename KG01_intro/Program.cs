@@ -22,25 +22,9 @@ namespace KG01_intro.Circle
     {
         static void Main(string[] args)
         {
-            Basics b = new Basics();
-            b.tal = 10;
-            
-            Basics b2;
-           
-            b2 = b;
-            b2.tal = 1;
-            int k = 10;
-            int kb = k;
-            k = 1;
-            b.Run();
-            //Person p = new Person();
+            Printer printer = new Printer();
 
-
-            //int i;
-            //var k = 1L;
-            //long l = 10;
-            //l = k;
-            //k = (int)l;
+            printer.Print("Hej");
         }
     }
 }

@@ -49,6 +49,8 @@ namespace KG01_intro.Circle
         {
             // ...
         }
+
+        public int MyProperty { get; set; }
     }
 
 
@@ -56,6 +58,9 @@ namespace KG01_intro.Circle
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine(args.Length);
+            
             Printer printer = new Printer();
             printer.Navn = "Ole";
             printer.Navn = null;

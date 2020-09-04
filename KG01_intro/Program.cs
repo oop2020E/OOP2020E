@@ -50,7 +50,13 @@ namespace KG01_intro.Circle
             // ...
         }
 
-        public int MyProperty { get; set; }
+        public int MyProperty
+        {
+            get
+            {
+                return 10 + 1;
+            }
+        }
     }
 
 

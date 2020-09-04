@@ -16,6 +16,8 @@ namespace KG01_intro.Circle
 
     class Printer
     {
+
+        public string Navn;
         public void Print(Document text)
         {
             for(int i = 0; i < text.Linier; i++)
@@ -36,8 +38,9 @@ namespace KG01_intro.Circle
         static void Main(string[] args)
         {
             Printer printer = new Printer();
+            printer.Navn = "";
             printer.Print(new Document());
-            printer.Drej(1);
+            
         }
     }
 }

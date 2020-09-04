@@ -26,14 +26,14 @@ namespace KG01_intro
             #region Taltyper
             //INTROTODO 10 TAL
             int k = 10;
-            float f = 0f;
+            decimal f = 0.0m;
             double d = 10.0;
             decimal m = 10m;
 
             #region Talpræcision
             for (int i = 0; i < 10000000; i++)
             {
-                f += 0.1f;
+                f += 0.1m;
             }
             Console.WriteLine(f);
             #endregion
@@ -43,6 +43,10 @@ namespace KG01_intro
 
             bool b1 = true;
             bool b2 = false;
+            if (1)
+            {
+
+            }
             char v = '\n';
             string s = "Thomas";
             // short, byte

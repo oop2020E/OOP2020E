@@ -19,14 +19,14 @@ namespace KG01_intro
     {
         static void Main(string[] args)
         {
-            Person p = new Person();
+            //Person p = new Person();
 
 
-            int i;
-            var k = 1L;
-            long l = 10;
-            l = k;
-            k = (int)l;
+            //int i;
+            //var k = 1L;
+            //long l = 10;
+            //l = k;
+            //k = (int)l;
         }
     }
 }

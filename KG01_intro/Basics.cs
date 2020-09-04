@@ -26,16 +26,16 @@ namespace KG01_intro
             #region Taltyper
             //INTROTODO 10 TAL
             int k = 10;
-            float f = 10f;
+            float f = 0f;
             double d = 10.0;
             decimal m = 10m;
 
             #region Talpræcision
-            //for (int i = 0; i < 10000000; i++)
-            //{
-            //    f += 0.1f;
-            //}
-            //Console.WriteLine(f);
+            for (int i = 0; i < 10000000; i++)
+            {
+                f += 0.1f;
+            }
+            Console.WriteLine(f);
             #endregion
             #endregion
 

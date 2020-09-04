@@ -12,7 +12,7 @@ namespace KG01_intro
         public static int stal;
         public void Run()
         {
-            string s = 1.ToString();
+            
             //_INTROTODO 05 Intro til syntax og miljø
             #region Syntax og miljø
             /* kommer løbende 
@@ -69,7 +69,6 @@ namespace KG01_intro
 
             Console.WriteLine(Fib1(10));
             Console.WriteLine(Fib2(10));
-
             #endregion
 
             #region iterative
@@ -114,7 +113,9 @@ namespace KG01_intro
             //    throw new ArgumentOutOfRangeException();
 
             if (n == 0)
+            {
                 return 0;
+            }
             if (n == 1)
                 return 1;
             return Fib1(n - 1) + Fib1(n - 2);
@@ -136,6 +137,10 @@ namespace KG01_intro
                     return 0;
                 case 1:
                     return 1;
+                    break;
+                case 2:
+                    Console.WriteLine("du skrevet 2");
+                    break;
                 default:
                     return Fib2(n - 1) + Fib2(n - 2);
             }

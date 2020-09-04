@@ -9,9 +9,12 @@ namespace KG01_intro.Circle
     //INTROTODO 30 Indkapsling -- fra GetV/SetV() til Properties
 
     //TODOEXTRA 50 Enum+switch
-    class Person
+    class Printer
     {
+        public void Print()
+        {
 
+        }
     }
 
 

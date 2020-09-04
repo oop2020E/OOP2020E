@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace KG01_intro
+namespace KG01_intro.Circle
 {
     //INTROTODO 15 Discuss memory
     //INTROTODO 20 Create class: fields, accessmodifiers -- printer-driver

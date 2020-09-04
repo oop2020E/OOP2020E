@@ -11,9 +11,13 @@ namespace KG01_intro.Circle
     //TODOEXTRA 50 Enum+switch
     class Printer
     {
-        public void Print()
+        public void Print(string text)
         {
-
+            // ...
+        }
+        public void Drej(int linier)
+        {
+            // ...
         }
     }
 
@@ -23,7 +27,7 @@ namespace KG01_intro.Circle
         static void Main(string[] args)
         {
             Printer printer = new Printer();
-
+            printer.Drej();
             printer.Print("Hej");
         }
     }

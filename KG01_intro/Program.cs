@@ -9,16 +9,19 @@ namespace KG01_intro
     //INTROTODO 30 Indkapsling -- fra GetV/SetV() til Properties
 
     //TODOEXTRA 50 Enum+switch
+    class Person
+    {
 
-
+    }
 
 
     class Program
     {
         static void Main(string[] args)
         {
+            Person p = new Person();
             int i;
-            int k = 1 + 1;
+            var k = 1L;
             long l = 10;
             l = k;
             k = (int)l;

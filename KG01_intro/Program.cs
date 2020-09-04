@@ -20,6 +20,7 @@ namespace KG01_intro.Circle
         static void Main(string[] args)
         {
             Basics b = new Basics();
+            b.Run();
             //Person p = new Person();
 
 

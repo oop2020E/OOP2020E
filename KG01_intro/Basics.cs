@@ -9,6 +9,7 @@ namespace KG01_intro
     class Basics
     {
         public int tal;
+        public static int stal;
         public void Run()
         {
             //_INTROTODO 05 Intro til syntax og miljø
@@ -53,7 +54,7 @@ namespace KG01_intro
 
             #region Arrays
             int[] array = new int[10];
-
+            
             int[][] jagged = new int[5][];
 
             int[,] multidim = new int[10, 10];
@@ -65,8 +66,8 @@ namespace KG01_intro
 
             #region Metoder og selektive
 
-            //Console.WriteLine(Fib1(10));
-            //Console.WriteLine(Fib2(10)); 
+            Console.WriteLine(Fib1(10));
+            Console.WriteLine(Fib2(10));
 
             #endregion
 

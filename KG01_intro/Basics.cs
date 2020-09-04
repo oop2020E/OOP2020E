@@ -8,6 +8,7 @@ namespace KG01_intro
 {
     class Basics
     {
+        public int tal;
         public void Run()
         {
             //_INTROTODO 05 Intro til syntax og miljø
@@ -24,7 +25,7 @@ namespace KG01_intro
             #region Variabler og typer
 
             #region Taltyper
-            //INTROTODO 10 TAL
+            //_INTROTODO 10 TAL
             int k = 10;
             decimal f = 0.0m;
             double d = 10.0;

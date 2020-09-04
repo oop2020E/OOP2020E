@@ -20,8 +20,12 @@ namespace KG01_intro.Circle
         static void Main(string[] args)
         {
             Basics b = new Basics();
+            b.tal = 10;
+            
             Basics b2;
+           
             b2 = b;
+            b2.tal = 1;
             int k = 10;
             int kb = k;
             k = 1;

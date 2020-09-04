@@ -19,7 +19,5 @@ namespace KG01_intro
         {
             
         }
-
-
     }
 }

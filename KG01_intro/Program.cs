@@ -17,7 +17,7 @@ namespace KG01_intro.Circle
     class Printer
     {
 
-        private string Navn;
+        private string Navn {get;set;;
 
         public string GetNavn()
         {
@@ -26,7 +26,9 @@ namespace KG01_intro.Circle
 
         public void SetNavn(string value)
         {
-            Navn = value
+            if (value == null)
+                throw new ArgumentNullException("value må ikke vær enull");
+            Navn = value;
         }
         public void Print(Document text)
         {
@@ -48,7 +50,9 @@ namespace KG01_intro.Circle
         static void Main(string[] args)
         {
             Printer printer = new Printer();
+            printer.SetNavn("Ole");
             Console.WriteLine("min printer hedder: " + printer.GetNavn());
+            
             printer.Print(new Document());
             
         }

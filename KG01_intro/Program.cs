@@ -17,19 +17,24 @@ namespace KG01_intro.Circle
     class Printer
     {
 
-        private string Navn {get;set;;
+        public string _navn;
+         public string Navn
+        {
+            set
+            {
+                _navn = value;
+            }
+            private get
+            {
+                return _navn;
+            }
+        }
 
-        public string GetNavn()
+        private string GetNavn()
         {
             return Navn;
         }
 
-        public void SetNavn(string value)
-        {
-            if (value == null)
-                throw new ArgumentNullException("value må ikke vær enull");
-            Navn = value;
-        }
         public void Print(Document text)
         {
             for(int i = 0; i < text.Linier; i++)

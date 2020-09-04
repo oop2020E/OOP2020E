@@ -79,10 +79,6 @@ namespace KG01_intro
 
             }
 
-            for (int i = 0; i < tal.Length; i++)
-            {
-
-            }
 
             while (true)
             {

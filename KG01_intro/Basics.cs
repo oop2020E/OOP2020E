@@ -10,7 +10,7 @@ namespace KG01_intro
     {
         public void Run()
         {
-            //INTROTODO 05 Intro til syntax og miljø
+            //_INTROTODO 05 Intro til syntax og miljø
             #region Syntax og miljø
             /* kommer løbende 
              * -- programmet køres med en af følgende:
@@ -26,7 +26,7 @@ namespace KG01_intro
             #region Taltyper
             //INTROTODO 10 TAL
             int k = 10;
-            float f = 10.0f;
+            float f = 10f;
             double d = 10.0;
             decimal m = 10m;
 

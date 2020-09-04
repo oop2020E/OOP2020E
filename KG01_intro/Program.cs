@@ -20,8 +20,8 @@ namespace KG01_intro
         static void Main(string[] args)
         {
             Person p = new Person();
-            Person* p = (Person*)malloc(sizeof(Person));
-            free p;
+
+
             int i;
             var k = 1L;
             long l = 10;

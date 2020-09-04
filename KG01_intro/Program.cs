@@ -18,7 +18,9 @@ namespace KG01_intro.Circle
     {
 
         private string _navn;
-         public string Navn
+        private string foo;
+
+        public string Navn
         {
             set
             {
@@ -39,7 +41,7 @@ namespace KG01_intro.Circle
 
         public void Print(Document text)
         {
-            for(int i = 0; i < text.Linier; i++)
+            for (int i = 0; i < text.Linier; i++)
             {
                 //Console.WriteLine();
                 Drej(1);
@@ -49,6 +51,7 @@ namespace KG01_intro.Circle
         {
             // ...
         }
+        public string Foo { get; set; }
 
         public int MyProperty
         {

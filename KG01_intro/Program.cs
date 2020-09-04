@@ -17,7 +17,17 @@ namespace KG01_intro.Circle
     class Printer
     {
 
-        public string Navn;
+        private string Navn;
+
+        public string GetNavn()
+        {
+            return Navn;
+        }
+
+        public void SetNavn(string value)
+        {
+            Navn = value
+        }
         public void Print(Document text)
         {
             for(int i = 0; i < text.Linier; i++)
@@ -38,7 +48,7 @@ namespace KG01_intro.Circle
         static void Main(string[] args)
         {
             Printer printer = new Printer();
-            printer.Navn = "";
+            Console.WriteLine("min printer hedder: " + printer.GetNavn());
             printer.Print(new Document());
             
         }

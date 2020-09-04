@@ -21,7 +21,7 @@ namespace KG01_intro
             int k = 1 + 1;
             long l = 10;
             l = k;
-            k = l;
+            k = (int)l;
         }
     }
 }

@@ -12,6 +12,7 @@ namespace KG01_intro
         public static int stal;
         public void Run()
         {
+            string s = 1.ToString();
             //_INTROTODO 05 Intro til syntax og miljø
             #region Syntax og miljø
             /* kommer løbende 

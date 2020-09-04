@@ -68,11 +68,11 @@ namespace KG01_intro
             #region Metoder og selektive
 
             Console.WriteLine(Fib1(10));
-            Console.WriteLine(Fib2(10));
+            //Console.WriteLine(Fib2(10));
             #endregion
 
             #region iterative
-            int[] tal = { 1, 2, 4, 5, 6, 7, 8, 9 };
+            int[] tal = new int[]{ 1, 2, 4, 5, 6, 7, 8, 9 };
 
             for (int i = 0; i < tal.Length; i++)
             {
@@ -126,25 +126,25 @@ namespace KG01_intro
         /// </summary>
         /// <param name="n">Tal i fibonaccirækken</param>
         /// <returns></returns>
-        private int Fib2(int n)
-        {
-            //if (n < 0)
-            //    throw new ArgumentOutOfRangeException();
+        ////private int Fib2(int n)
+        //{
+        //    //if (n < 0)
+        //    //    throw new ArgumentOutOfRangeException();
 
-            switch (n)
-            {
-                case 0:
-                    return 0;
-                case 1:
-                    return 1;
-                    break;
-                case 2:
-                    Console.WriteLine("du skrevet 2");
-                    break;
-                default:
-                    return Fib2(n - 1) + Fib2(n - 2);
-            }
-        }
+        //    switch (n)
+        //    {
+        //        case 0:
+        //            return 0;
+        //        case 1:
+        //            return 1;
+        //            break;
+        //        case 2:
+        //            Console.WriteLine("du skrevet 2");
+        //            break;
+        //        default:
+        //            return Fib2(n - 1) + Fib2(n - 2);
+        //    }
+        //}
 
     }
 }

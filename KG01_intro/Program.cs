@@ -17,7 +17,11 @@ namespace KG01_intro
     {
         static void Main(string[] args)
         {
-            
+            int i;
+            int k = 1 + 1;
+            long l = 10;
+            l = k;
+            k = l;
         }
     }
 }

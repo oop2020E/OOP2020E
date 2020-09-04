@@ -24,7 +24,7 @@ namespace KG01_intro.Circle
                 Drej(1);
             }
         }
-        public void Drej(int linier)
+        private void Drej(int linier)
         {
             // ...
         }

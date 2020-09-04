@@ -32,10 +32,10 @@ namespace KG01_intro
             decimal m = 10m;
 
             #region Talpræcision
-            for (int i = 0; i < 10000000; i++)
-            {
-                f += 0.1m;
-            }
+            //for (int i = 0; i < 10000000; i++)
+            //{
+            //    f += 0.1m;
+            //}
             Console.WriteLine(f);
             #endregion
             #endregion

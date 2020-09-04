@@ -17,11 +17,13 @@ namespace KG01_intro.Circle
     class Printer
     {
 
-        public string _navn;
+        private string _navn;
          public string Navn
         {
             set
             {
+                if (value == null)
+                    throw new ArgumentNullException();
                 _navn = value;
             }
             private get
@@ -55,9 +57,8 @@ namespace KG01_intro.Circle
         static void Main(string[] args)
         {
             Printer printer = new Printer();
-            printer.SetNavn("Ole");
-            Console.WriteLine("min printer hedder: " + printer.GetNavn());
-            
+            printer.Navn = "Ole";
+            printer.Navn = null;
             printer.Print(new Document());
             
         }

@@ -19,6 +19,7 @@ namespace KG01_intro
     {
         static void Main(string[] args)
         {
+            Basics b = new Basics();
             //Person p = new Person();
 
 

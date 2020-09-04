@@ -43,12 +43,10 @@ namespace KG01_intro
 
             bool b1 = true;
             bool b2 = false;
-            if (1)
-            {
-
-            }
             char v = '\n';
             string s = "Thomas";
+            s = s + s;
+            Console.WriteLine(s.ToLower());
             // short, byte
             #endregion
 

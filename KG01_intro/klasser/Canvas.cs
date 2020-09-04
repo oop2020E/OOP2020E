@@ -15,11 +15,14 @@ namespace KG01_intro.klasser
         //    Console.WindowHeight = 60;
         //    Console.WindowWidth = 140;
         //}
+
+        (int, int) GetCursorPosition() => (Console.CursorLeft, Console.CursorTop);
+
         public void Putpixel(int x, int y)
         {
             if (x >= 0 && y >= 0 && x < Console.WindowWidth && y + 1 < Console.WindowHeight)
             {
-                (int Left, int Top) = Console.GetCursorPosition();
+                (int Left, int Top) = GetCursorPosition();
                 Console.SetCursorPosition(x, (Console.WindowHeight - 1) - y);
                 Console.Write("x");  
                 Console.SetCursorPosition(Left, Top);

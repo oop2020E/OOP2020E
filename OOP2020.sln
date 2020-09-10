@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30404.54
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KG02_program", "KG01_intro\KG02_program.csproj", "{1603FEB6-E6E1-428E-A5FF-ADD957374E08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP2020", "KG01_intro\OOP2020.csproj", "{1603FEB6-E6E1-428E-A5FF-ADD957374E08}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureExample", "FigureSample\FigureExample.csproj", "{655ED3B4-DF8B-453A-A9C3-36274A216079}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureSample", "FigureSample\FigureSample.csproj", "{655ED3B4-DF8B-453A-A9C3-36274A216079}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KG02_inheritance", "KG02_inheritance\KG02_inheritance.csproj", "{F290FA92-4294-4DB5-B3A2-2563A947300C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KG02_inheritance", "KG02_inheritance\KG02_inheritance.csproj", "{F290FA92-4294-4DB5-B3A2-2563A947300C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,7 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Comp\FigureExample.csproj" />
+    <ProjectReference Include="..\FigureSample\FigureSample.csproj" />
+    <ProjectReference Include="..\KG02_inheritance\KG02_inheritance.csproj" />
   </ItemGroup>
 
 </Project>

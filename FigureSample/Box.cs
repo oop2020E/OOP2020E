@@ -1,4 +1,4 @@
-﻿namespace FigureExample
+﻿namespace FigureSample
 {
 
     //TODO 120 Box med Areal-beregner

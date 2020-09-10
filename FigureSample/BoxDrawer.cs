@@ -1,4 +1,4 @@
-﻿namespace FigureExample
+﻿namespace FigureSample
 {
     public class BoxDrawer
     {

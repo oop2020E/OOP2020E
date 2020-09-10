@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using FigureExample;
+using FigureSample;
 
-namespace KG01_intro
+
+namespace OOP2020
 {
     class Program
     {

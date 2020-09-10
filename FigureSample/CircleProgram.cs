@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace FigureExample
+namespace FigureSample
 {
     //TODO 130 introducér Figure
     

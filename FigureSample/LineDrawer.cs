@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FigureExample
+namespace FigureSample
 {
     public class LineDrawer
     {

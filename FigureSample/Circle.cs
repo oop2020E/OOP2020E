@@ -1,4 +1,4 @@
-﻿namespace FigureExample
+﻿namespace FigureSample
 {
     // TODO 121 Cirkel med Areal-beregner
     public class Circle

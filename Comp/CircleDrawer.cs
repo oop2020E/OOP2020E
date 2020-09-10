@@ -1,29 +1,44 @@
-﻿namespace Comp
+﻿namespace FigureExample
 {
+    class DrawableCircle : Circle
+    {
+        public DrawableCircle(int radius, int x, int y, double thinkness = 0.1) : base(radius, x, y, thinkness)
+        {
+            
+        }
+
+
+    }
+
+    //TODO 140 
     class CircleDrawer
     {
-        public int Width { get; set; }
-        public int Height { get; set; }
-        private Canvas _canvas;
+        private readonly Canvas _canvas;
         public CircleDrawer(Canvas canvas)
         {
             _canvas = canvas;
         }
-        public void Draw(Circle c)
+
+        public void Draw(Canvas canvas, Circle circle)
         {
-            double Inner = c.Radius - c.Thinkness;
-            double Outer = c.Radius + c.Thinkness;
-            for (int x = -c.Radius * 2; x <= c.Radius * 2; x++)
+            double inner = circle.Radius - circle.Thinkness;
+            double outer = circle.Radius + circle.Thinkness;
+            for (int x = -circle.Radius * 2; x <= circle.Radius * 2; x++)
             {
-                for (int y = -c.Radius; y <= c.Radius; y++)
+                for (int y = -circle.Radius; y <= circle.Radius; y++)
                 {
                     double value = (x / 2.0) * (x / 2.0) + y * y;
-                    if (value >= Inner * Inner && value <= Outer * Outer)
+                    if (value >= inner * inner && value <= outer * outer)
                     {
-                        _canvas.PutPixel(c.X + x, c.Y + y);
+                        canvas.PutPixel(circle.X + x, circle.Y + y);
                     }
                 }
             }
+
+        }
+        public void Draw(Circle circle)
+        {
+            Draw(_canvas,circle);
         }
     }
 

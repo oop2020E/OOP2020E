@@ -1,25 +1,29 @@
-﻿namespace Comp
+﻿using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+
+namespace FigureExample
 {
-    class CircleProgram
+    //TODO 130 introducér Figure
+    
+    public class CircleProgram
     {
-        public static void Run()
+        public void Run()
         {
-            //TODO 05 CircleProgram overview
+            //TODO 100 CircleProgram overview
 
+            Canvas c = new Canvas("My circle-program");
+            c.Clear();
+            Line l = new Line(0, 0, 10, 10, 1);
+            LineDrawer ld = new LineDrawer(c);
+            BoxDrawer bd = new BoxDrawer(c);
 
-            // Circle Code
-            Canvas canvas = new Canvas("My circle program");
-            canvas.Clear();
-
-            Circle c1 = new Circle();
-            c1.X = 70;
-            c1.Y = 30;
-            c1.Radius = 10;
-
-            CircleDrawer cd = new CircleDrawer(canvas);
-
-            cd.Draw(c1);
-
+            Box b = new Box(15, 4, 5, 5);
+            bd.Draw(b);
+            ld.DrawLine(l);
+            Console.ReadKey();
         }
+
+
     }
 }

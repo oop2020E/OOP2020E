@@ -71,12 +71,12 @@ namespace FigureSample
             }
         }
 
-        private void DrawLine((int, int) s, (int, int) e, ConsoleCanvas c) => DrawLine(s.Item1, s.Item2, e.Item1, e.Item2, c);
+        private void DrawLine((int, int) s, (int, int) e, Canvas c) => DrawLine(s.Item1, s.Item2, e.Item1, e.Item2, c);
 
         // Fra kilden: https://www.geeksforgeeks.org/bresenhams-line-generation-algorithm/
         //  - modificeret for: slope-håndtering og tegneretning
         // function for line generation 
-        private void DrawLine(int x1, int y1, int x2, int y2, ConsoleCanvas c)
+        private void DrawLine(int x1, int y1, int x2, int y2, Canvas c)
         {
             double slope = (double) (y2 - y1) / (double) (x2 - x1);
             if (slope < 1 && slope>-1)

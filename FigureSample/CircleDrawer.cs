@@ -6,7 +6,10 @@
         {
             
         }
+        public void Draw()
+        {
 
+        }
 
     }
 

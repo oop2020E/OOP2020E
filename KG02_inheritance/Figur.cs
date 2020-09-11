@@ -5,10 +5,10 @@
 
         
 
-        public override sealed string ToString()
-        {
+        //public override sealed string ToString()
+        //{
             
-        }
+        //}
         public virtual string Name()
         {
             return "figur";
@@ -19,7 +19,7 @@
             X = x;
             Y = y;
         }
-        public int X { get; protected set; }
+        public int X { get;set; }
         public int Y { get; set; }
         public abstract int Area();
     }

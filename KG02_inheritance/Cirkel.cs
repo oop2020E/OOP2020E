@@ -17,11 +17,11 @@ namespace KG02_inheritance
         }
     }
 
-    class Powercircle : Cirkel
-    {
-        public Powercircle() 
-        {
+    //class Powercircle : Cirkel
+    //{
+    //    public Powercircle() 
+    //    {
 
-        }
-    }
+    //    }
+    //}
 }

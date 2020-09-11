@@ -10,6 +10,9 @@ namespace OOP2020
     {
         static void Main()
         {
+
+            ICloneable ic = "Thomas";
+            IEnumerable<char> chars = "Thomas";
             //new Demo().Run();
             CircleProgram cp = new CircleProgram();
             cp.Run();

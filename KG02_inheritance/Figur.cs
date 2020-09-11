@@ -2,6 +2,11 @@
 {
     public abstract class Figur
     {
+
+        public override sealed string ToString()
+        {
+            
+        }
         public virtual string Name()
         {
             return "figur";

@@ -2,7 +2,7 @@
 {
     class Rectangle : Figur
     {
-        public int Area()
+        public override int Area()
         {
             return H * B;
         }

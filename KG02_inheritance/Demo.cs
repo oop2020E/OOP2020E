@@ -16,7 +16,7 @@
 
         public void PrintArea(Figur f)
         {
-            System.Console.WriteLine(((Cirkel)f).Area());
+            System.Console.WriteLine(f.Area());
         }
 
 

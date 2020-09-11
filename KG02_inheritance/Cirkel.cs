@@ -8,6 +8,10 @@ namespace KG02_inheritance
         {
 
         }
+        public Cirkel(Figur figur): base(figur.X,figur.Y)
+        {
+
+        }
         public Cirkel(int radius) : base(0, 0)
         {            
             Radius = radius;

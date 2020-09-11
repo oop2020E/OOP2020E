@@ -7,6 +7,10 @@ namespace FigureSample
     public abstract class Canvas
     {
         public abstract void PutPixel(int x, int y);
+
+        public virtual void Clear()
+        {
+        }
     }
 
     public class BitmapCanvas : Canvas
@@ -37,7 +41,7 @@ namespace FigureSample
         public string Headline { get; set; }
         public char Ink { get; set; } = 'x';
 
-        public void PutPixel(int x, int y)
+        public override void PutPixel(int x, int y)
         {
             if (x >= 0 && y >= 0 && x < Console.WindowWidth && y + 1 < Console.WindowHeight)
             {
@@ -49,7 +53,7 @@ namespace FigureSample
             }
         }
 
-        public void Clear()
+        public override void Clear()
         {
             Console.Clear();
             Console.WriteLine("My circle program!");
@@ -75,5 +79,10 @@ namespace FigureSample
                 ShowWindow(ThisConsole, MAXIMIZE);
             }
         }
+
+        //public override void PutPixel(int x, int y)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

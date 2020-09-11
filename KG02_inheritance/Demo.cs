@@ -9,6 +9,7 @@
 
             System.Console.WriteLine(((Cirkel)f).Area());
 
+            PrintArea(new Rectangle());
             PrintArea(f);
         }
 

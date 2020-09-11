@@ -46,7 +46,7 @@ namespace KG02_inheritance
         public int Radius { get; set; }
         public int Area()
         {
-            return Math.PI * Radius * 2;
+            return (int)(Math.PI * Radius * Radius);
         }
     }
 
@@ -67,7 +67,7 @@ namespace KG02_inheritance
         public void Run()
         {
             Cirkel c = new Cirkel();
-            c.
+            
         }
         //TODO_ 001 Repeat and demonstrate last week's material - Figure
 

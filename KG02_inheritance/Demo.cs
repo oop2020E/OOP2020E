@@ -39,18 +39,25 @@ namespace KG02_inheritance
     {
         public int X { get; set; }
         public int Y { get; set; }
-
     }
 
-    class Cirkel
+    class Cirkel : Figur
     {
         public int Radius { get; set; }
+        public int Area()
+        {
+            return Math.PI * Radius * 2;
+        }
     }
 
-    class Rectangle
+    class Rectangle : Figur
     {
+        public int Area()
+        {
+            return H * B;
+        }
         public int H { get; set; }
-        public int L { get; set; }
+        public int B { get; set; }
     }
 
 
@@ -59,7 +66,8 @@ namespace KG02_inheritance
     {
         public void Run()
         {
-
+            Cirkel c = new Cirkel();
+            c.
         }
         //TODO_ 001 Repeat and demonstrate last week's material - Figure
 

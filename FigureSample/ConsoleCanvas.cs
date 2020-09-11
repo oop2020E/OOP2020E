@@ -31,8 +31,6 @@ namespace FigureSample
         public ConsoleCanvas(string headline)
         {
             this.Headline = headline;
-            //Console.WindowHeight = 60;
-            //Console.WindowWidth = 140;
             Console.WindowHeight = 40;
             Console.WindowWidth = 80;
             Maximize();
@@ -62,16 +60,9 @@ namespace FigureSample
 
         private static extern IntPtr GetConsoleWindow();
         private static IntPtr ThisConsole = GetConsoleWindow();
-
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
-
         private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-        private const int HIDE = 0;
         private const int MAXIMIZE = 3;
-        private const int MINIMIZE = 6;
-        private const int RESTORE = 9;
-
-
         static void Maximize()
         {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
@@ -79,10 +70,5 @@ namespace FigureSample
                 ShowWindow(ThisConsole, MAXIMIZE);
             }
         }
-
-        //public override void PutPixel(int x, int y)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

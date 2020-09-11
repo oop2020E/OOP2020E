@@ -8,10 +8,73 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FigureSample.Circle">
-    <Position X="4" Y="1.5" Width="1.5" />
+    <Position X="6" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAYAA=</HashCode>
       <FileName>Circle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.Box" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Box.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.BoxDrawer" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BoxDrawer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.Canvas">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>ConsoleCanvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.BitmapCanvas">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConsoleCanvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.ConsoleCanvas">
+    <Position X="13.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAABIAAQBgACA=</HashCode>
+      <FileName>ConsoleCanvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.DrawableCircle" Collapsed="true">
+    <Position X="13.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CircleDrawer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.CircleDrawer" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CircleDrawer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.Line" Collapsed="true">
+    <Position X="17.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAACAAAAAQAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.FOo" Collapsed="true">
+    <Position X="16" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FOo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

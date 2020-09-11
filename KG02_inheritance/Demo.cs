@@ -5,7 +5,7 @@
         public void Run()
         {
             Cirkel c = new Cirkel();
-            
+            Figur f = c;
         }
         //TODO_ 001 Repeat and demonstrate last week's material - Figure
 

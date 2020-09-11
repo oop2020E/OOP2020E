@@ -35,16 +35,22 @@ namespace KG02_inheritance
         }
     }
 
+    class Figur
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+
+    }
+
     class Cirkel
     {
         public int Radius { get; set; }
-        public int X { get; set; }
-        public int Y { get; set; }
     }
 
     class Rectangle
     {
-
+        public int H { get; set; }
+        public int L { get; set; }
     }
 
 

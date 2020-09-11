@@ -6,13 +6,16 @@
         {
             Cirkel c = new Cirkel();
             Figur f = c;
+
+            System.Console.WriteLine(((Cirkel)f).Area());
+
             PrintArea(f);
         }
 
 
         public void PrintArea(Figur f)
         {
-            System.Console.WriteLine(f.Area());
+            System.Console.WriteLine(((Cirkel)f).Area());
         }
 
 

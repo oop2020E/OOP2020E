@@ -4,18 +4,25 @@ using System.Runtime.InteropServices;
 
 namespace FigureSample
 {
-    abstract class Canvas
+    public abstract class Canvas
     {
-
+        public abstract void PutPixel(int x, int y);
     }
-    
-    public class BitmapCanvas
-    {
 
+    public class BitmapCanvas : Canvas
+    {
+        public BitmapCanvas() //:base ("BitmapCanvas")
+        {
+
+        }
+        public override void PutPixel(int x, int y)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     //TODO 200 Canvas vil altid tegne i terminalen! -- hvad hvis jeg vil kunne vælge? -- introducer ConsoleCanvas og Canvas
-    public class ConsoleCanvas
+    public class ConsoleCanvas :Canvas
     {
         public ConsoleCanvas(string headline)
         {

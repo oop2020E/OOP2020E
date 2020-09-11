@@ -7,7 +7,7 @@ namespace KG02_inheritance
 
         public override string Name()
         {
-            return base.Name() + ": Cirkel";
+            return base.Name() + "Cirkel";
         }
         public Cirkel() : this(10)
         {

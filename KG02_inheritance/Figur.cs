@@ -3,6 +3,8 @@
     public abstract class Figur
     {
 
+        
+
         public override sealed string ToString()
         {
             
@@ -17,7 +19,7 @@
             X = x;
             Y = y;
         }
-        public int X { get; set; }
+        public int X { get; protected set; }
         public int Y { get; set; }
         public abstract int Area();
     }

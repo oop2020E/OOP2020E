@@ -6,7 +6,16 @@
         {
             Cirkel c = new Cirkel();
             Figur f = c;
+            PrintArea(f);
         }
+
+
+        public void PrintArea(Figur f)
+        {
+            System.Console.WriteLine(f.Area());
+        }
+
+
         //TODO_ 001 Repeat and demonstrate last week's material - Figure
 
         //TODO 010 Repeat: C#: statically typed and strongly typed language -- primitive types and custom types

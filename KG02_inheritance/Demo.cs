@@ -4,10 +4,10 @@
     {
         public void Run()
         {
-            Cirkel c = new Cirkel(10,10,10);
+            Cirkel c = new Cirkel(10);
             Figur f = c;
 
-            Cirkel c = new Cirkel(1);
+            //Cirkel c = new Cirkel(1);
 
             System.Console.WriteLine(((Cirkel)f).Area());
 

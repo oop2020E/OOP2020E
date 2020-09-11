@@ -10,9 +10,9 @@ namespace OOP2020
     {
         static void Main()
         {
-            new Demo().Run();
-            //CircleProgram cp = new CircleProgram();
-            //cp.Run();
+            //new Demo().Run();
+            CircleProgram cp = new CircleProgram();
+            cp.Run();
         }
     }
 }

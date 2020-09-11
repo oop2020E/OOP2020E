@@ -6,8 +6,8 @@
         {
             Cirkel c = new Cirkel(10);
             Figur f = c;
-
-            System.Console.WriteLine(   c.Name());
+            c.Y = 10;
+            System.Console.WriteLine( c.Name());
             //Cirkel c = new Cirkel(1);
 
             System.Console.WriteLine(((Cirkel)f).Area());

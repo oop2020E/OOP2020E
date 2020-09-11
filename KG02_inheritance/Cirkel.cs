@@ -4,6 +4,11 @@ namespace KG02_inheritance
 {
     class Cirkel : Figur
     {
+
+        public override string Name()
+        {
+            return base.Name() + ": Cirkel";
+        }
         public Cirkel() : this(10)
         {
 

@@ -2,6 +2,11 @@
 {
     public abstract class Figur
     {
+        public virtual string Name()
+        {
+            return "figur";
+        }
+
         public Figur(int x, int y)
         {
             X = x;

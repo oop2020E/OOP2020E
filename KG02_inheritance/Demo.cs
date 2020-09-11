@@ -35,14 +35,27 @@ namespace KG02_inheritance
         }
     }
 
+    class Cirkel
+    {
+        public int Radius { get; set; }
+        public int X { get; set; }
+        public int Y { get; set; }
+    }
+
+    class Rectangle
+    {
+
+    }
+
+
+
     public class Demo
     {
         public void Run()
         {
 
-
         }
-        //TODO 001 Repeat and demonstrate last week's material - Figure
+        //TODO_ 001 Repeat and demonstrate last week's material - Figure
 
         //TODO 010 Repeat: C#: statically typed and strongly typed language -- primitive types and custom types
 

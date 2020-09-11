@@ -7,6 +7,10 @@ namespace FigureSample
 {
     //TODO 130 introducér Figure
     
+    class FOo
+    {
+
+    }
     public class CircleProgram
     {
         public void Run()
@@ -20,6 +24,7 @@ namespace FigureSample
             vc[1] = new ConsoleCanvas("");
             foreach (Canvas item in vc)
             {
+
 
             }
 

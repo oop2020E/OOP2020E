@@ -2,8 +2,21 @@
 
 namespace KG02_inheritance
 {
+
+    public class Person
+    {
+        public string Fornavn;
+        public string Efternavn;
+
+    }
+
+
     public class Demo
     {
+        public void Run()
+        {
+            Person p = new Person();
+        }
         //TODO 001 Repeat and demonstrate last week's material - Figure
 
         //TODO 010 Repeat: C#: statically typed and strongly typed language -- primitive types and custom types

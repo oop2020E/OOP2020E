@@ -13,13 +13,13 @@
     //TODO 140 
     class CircleDrawer
     {
-        private readonly Canvas _canvas;
-        public CircleDrawer(Canvas canvas)
+        private readonly ConsoleCanvas _canvas;
+        public CircleDrawer(ConsoleCanvas canvas)
         {
             _canvas = canvas;
         }
 
-        public void Draw(Canvas canvas, Circle circle)
+        public void Draw(ConsoleCanvas canvas, Circle circle)
         {
             double inner = circle.Radius - circle.Thinkness;
             double outer = circle.Radius + circle.Thinkness;

@@ -4,11 +4,20 @@ using System.Runtime.InteropServices;
 
 namespace FigureSample
 {
+    abstract class Canvas
+    {
+
+    }
+    
+    public class BitmapCanvas
+    {
+
+    }
 
     //TODO 200 Canvas vil altid tegne i terminalen! -- hvad hvis jeg vil kunne vælge? -- introducer ConsoleCanvas og Canvas
-    public class Canvas
+    public class ConsoleCanvas
     {
-        public Canvas(string headline)
+        public ConsoleCanvas(string headline)
         {
             this.Headline = headline;
             //Console.WindowHeight = 60;

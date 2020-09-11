@@ -4,8 +4,8 @@ namespace FigureSample
 {
     public class LineDrawer
     {
-        private readonly Canvas _canvas;
-        public LineDrawer(Canvas c)
+        private readonly ConsoleCanvas _canvas;
+        public LineDrawer(ConsoleCanvas c)
         {
             _canvas = c;
         }
@@ -17,7 +17,7 @@ namespace FigureSample
                 DrawLineT(l.X,l.Y,l.XEnd,l.YEnd, l.Thickness, _canvas);
         }
         // med thickness
-        private void DrawLineT(int x1, int y1, int x2, int y2, double t, Canvas c)
+        private void DrawLineT(int x1, int y1, int x2, int y2, double t, ConsoleCanvas c)
         {
             var dx = x2 - x1;
             var dy = y2 - y1;
@@ -71,12 +71,12 @@ namespace FigureSample
             }
         }
 
-        private void DrawLine((int, int) s, (int, int) e, Canvas c) => DrawLine(s.Item1, s.Item2, e.Item1, e.Item2, c);
+        private void DrawLine((int, int) s, (int, int) e, ConsoleCanvas c) => DrawLine(s.Item1, s.Item2, e.Item1, e.Item2, c);
 
         // Fra kilden: https://www.geeksforgeeks.org/bresenhams-line-generation-algorithm/
         //  - modificeret for: slope-håndtering og tegneretning
         // function for line generation 
-        private void DrawLine(int x1, int y1, int x2, int y2, Canvas c)
+        private void DrawLine(int x1, int y1, int x2, int y2, ConsoleCanvas c)
         {
             double slope = (double) (y2 - y1) / (double) (x2 - x1);
             if (slope < 1 && slope>-1)

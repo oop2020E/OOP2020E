@@ -3,7 +3,7 @@
     public class BoxDrawer
     {
         private readonly LineDrawer _lineDrawer;
-        public BoxDrawer(Canvas c)
+        public BoxDrawer(ConsoleCanvas c)
         {
             _lineDrawer = new LineDrawer(c);
         }

@@ -4,6 +4,10 @@ namespace KG02_inheritance
 {
     class Cirkel : Figur
     {
+        public Cirkel() : this(10)
+        {
+
+        }
         public Cirkel(int radius) : base(0, 0)
         {            
             Radius = radius;
@@ -12,6 +16,14 @@ namespace KG02_inheritance
         public override int Area()
         {
             return (int)(Math.PI * Radius * Radius);
+        }
+    }
+
+    class Powercircle : Cirkel
+    {
+        public Powercircle() 
+        {
+
         }
     }
 }

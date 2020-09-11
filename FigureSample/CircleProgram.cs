@@ -16,8 +16,16 @@ namespace FigureSample
             Canvas c = new ConsoleCanvas("My circle-program");
 
             Canvas[] vc = new Canvas[10];
+            vc[0] = new BitmapCanvas();
+            vc[1] = new ConsoleCanvas("");
+            foreach (Canvas item in vc)
+            {
+
+            }
+
             List<Canvas> lst = new List<Canvas>();
-            lst.Add(new ConsoleCanvas());
+
+            lst.Add(new ConsoleCanvas("Console"));
             lst.Add(new BitmapCanvas());
 
             c.Clear();

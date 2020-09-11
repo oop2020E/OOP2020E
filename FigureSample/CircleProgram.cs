@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
@@ -28,7 +27,7 @@ namespace FigureSample
 
             }
 
-            List<Canvas> lst = new List<Canvas>();
+            List
 
             lst.Add(new ConsoleCanvas("Console"));
             lst.Add(new BitmapCanvas());

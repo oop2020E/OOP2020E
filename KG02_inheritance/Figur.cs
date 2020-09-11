@@ -2,10 +2,6 @@
 {
     public abstract class Figur
     {
-        public Figur()
-        {
-
-        }
         public Figur(int x, int y)
         {
             X = x;

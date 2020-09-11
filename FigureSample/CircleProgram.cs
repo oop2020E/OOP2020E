@@ -1,15 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
 namespace FigureSample
 {
-    //TODO 130 introducér Figure
-    
-    class FOo
-    {
-
-    }
     public class CircleProgram
     {
         public void Run()
@@ -27,10 +22,8 @@ namespace FigureSample
 
             }
 
-            List
+            
 
-            lst.Add(new ConsoleCanvas("Console"));
-            lst.Add(new BitmapCanvas());
 
             c.Clear();
             Line l = new Line(0, 0, 10, 10, 1);

@@ -4,8 +4,8 @@ namespace FigureSample
 {
     public class LineDrawer
     {
-        private readonly ConsoleCanvas _canvas;
-        public LineDrawer(ConsoleCanvas c)
+        private readonly Canvas _canvas;
+        public LineDrawer(Canvas c)
         {
             _canvas = c;
         }
@@ -17,7 +17,7 @@ namespace FigureSample
                 DrawLineT(l.X,l.Y,l.XEnd,l.YEnd, l.Thickness, _canvas);
         }
         // med thickness
-        private void DrawLineT(int x1, int y1, int x2, int y2, double t, ConsoleCanvas c)
+        private void DrawLineT(int x1, int y1, int x2, int y2, double t, Canvas c)
         {
             var dx = x2 - x1;
             var dy = y2 - y1;

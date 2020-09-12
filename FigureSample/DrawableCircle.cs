@@ -12,8 +12,5 @@
             CircleDrawer cd = new CircleDrawer(canvas);
             cd.Draw(circle);
         }
-
     }
-
-    //TODOEXTRA 40 Create list of circles -- circlecollection?
 }

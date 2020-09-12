@@ -3,7 +3,6 @@ using System.Runtime.InteropServices;
 
 namespace FigureSample
 {
-    //TODO 200 Canvas vil altid tegne i terminalen! -- hvad hvis jeg vil kunne vælge? -- introducer ConsoleCanvas og Canvas
     public class ConsoleCanvas:Canvas
     {
         public ConsoleCanvas(string headline)
@@ -36,7 +35,6 @@ namespace FigureSample
             Console.Clear();
             Console.WriteLine("My circle program!");
         }
-
 
         #region maximize
         [DllImport("kernel32.dll", ExactSpelling = true)]

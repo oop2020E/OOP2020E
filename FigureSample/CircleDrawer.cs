@@ -1,6 +1,5 @@
 ﻿namespace FigureSample
 {
-
     class CircleDrawer
     {
         private readonly Canvas _canvas;

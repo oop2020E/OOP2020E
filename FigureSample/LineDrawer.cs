@@ -16,7 +16,6 @@ namespace FigureSample
             else
                 DrawLineT(l.X,l.Y,l.XEnd,l.YEnd, l.Thickness, _canvas);
         }
-        // med thickness
         private void DrawLineT(int x1, int y1, int x2, int y2, double t, Canvas c)
         {
             var dx = x2 - x1;

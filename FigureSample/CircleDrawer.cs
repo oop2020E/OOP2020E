@@ -1,16 +1,6 @@
 ﻿namespace FigureSample
 {
-    class DrawableCircle : Circle
-    {
-        public DrawableCircle(int radius, int x, int y, double thinkness = 0.1) : base(radius, x, y, thinkness)
-        {
-            
-        }
 
-
-    }
-
-    //TODO 140 
     class CircleDrawer
     {
         private readonly Canvas _canvas;
@@ -41,6 +31,4 @@
             Draw(_canvas,circle);
         }
     }
-
-    //TODOEXTRA 40 Create list of circles -- circlecollection?
 }

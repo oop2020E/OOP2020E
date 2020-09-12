@@ -1,7 +1,5 @@
 ﻿namespace FigureSample
 {
-
-    //TODO 120 Box med Areal-beregner
     public class Box
     {
         public Box(int x, int y, int width, int height,double thickness=1.0)

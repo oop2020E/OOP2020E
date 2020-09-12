@@ -1,5 +1,7 @@
 ﻿namespace FigureSample
 {
+
+
     public class BoxDrawer
     {
         private readonly LineDrawer _lineDrawer;

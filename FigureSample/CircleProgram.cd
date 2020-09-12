@@ -1,31 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Comp.CircleProgram">
-    <Position X="9.25" Y="1.5" Width="1.5" />
+  <Class Name="FigureSample.Box" Collapsed="true">
+    <Position X="1.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
-      <FileName>CircleProgram.cs</FileName>
+      <HashCode>AAAAAAAABAABAAAAAAAAAEAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Box.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Comp.CircleDrawer">
-    <Position X="7.5" Y="1.5" Width="1.5" />
+  <Class Name="FigureSample.BoxDrawer" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAoAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CircleDrawer.cs</FileName>
+      <HashCode>AAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BoxDrawer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Comp.Circle">
-    <Position X="4" Y="1.5" Width="1.5" />
+  <Class Name="FigureSample.Circle" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAYAA=</HashCode>
       <FileName>Circle.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Comp.Canvas">
-    <Position X="5.75" Y="1.5" Width="1.5" />
+  <Class Name="FigureSample.CircleDrawer" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAABAAAABAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CircleDrawer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.CircleProgram" Collapsed="true">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>CircleProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.Line" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAACAAAAAQAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Line.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.LineDrawer" Collapsed="true">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>LineDrawer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.Canvas" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
       <FileName>Canvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.DrawableBox" Collapsed="true">
+    <Position X="1.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DrawableBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.BitmapCanvas" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BitmapCanvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.DrawableCircle" Collapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DrawableCircle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FigureSample.ConsoleCanvas" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAABIAAQBgACA=</HashCode>
+      <FileName>ConsoleCanvas.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

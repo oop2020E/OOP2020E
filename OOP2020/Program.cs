@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using FigureSample;
+using KG01_Opgaver;
 
 
 namespace OOP2020
@@ -10,8 +11,11 @@ namespace OOP2020
     {
         static void Main()
         {
-            CircleProgram cp = new CircleProgram();
-            cp.Run();
+            //CircleProgram cp = new CircleProgram();
+            //cp.Run();
+            KG01_løsning løsning = new KG01_løsning();
+            løsning.Run();
+
         }
     }
 }

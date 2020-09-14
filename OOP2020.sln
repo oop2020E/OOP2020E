@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureSample", "FigureSampl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KG02_inheritance", "KG02_inheritance\KG02_inheritance.csproj", "{F290FA92-4294-4DB5-B3A2-2563A947300C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KG01_Opgaver", "KG01_Opgaver\KG01_Opgaver.csproj", "{46C667DC-6D64-48B8-B478-04922FBA4439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibOOP", "LibOOP\LibOOP.csproj", "{852D4167-0E39-4548-A600-861A65FC474B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{F290FA92-4294-4DB5-B3A2-2563A947300C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F290FA92-4294-4DB5-B3A2-2563A947300C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F290FA92-4294-4DB5-B3A2-2563A947300C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C667DC-6D64-48B8-B478-04922FBA4439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C667DC-6D64-48B8-B478-04922FBA4439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C667DC-6D64-48B8-B478-04922FBA4439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C667DC-6D64-48B8-B478-04922FBA4439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{852D4167-0E39-4548-A600-861A65FC474B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{852D4167-0E39-4548-A600-861A65FC474B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{852D4167-0E39-4548-A600-861A65FC474B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{852D4167-0E39-4548-A600-861A65FC474B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

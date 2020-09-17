@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using FigureSample;
-using KG01_Opgaver;
+using KG01Exercises;
 
 
 namespace OOP2020
@@ -13,7 +13,7 @@ namespace OOP2020
         {
             //CircleProgram cp = new CircleProgram();
             //cp.Run();
-            KG01_løsning løsning = new KG01_løsning();
+            KG01ExerciseSolution løsning = new KG01ExerciseSolution();
             løsning.Run();
 
         }

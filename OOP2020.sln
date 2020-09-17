@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP2020", "OOP2020\OOP2020.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureSample", "FigureSample\FigureSample.csproj", "{655ED3B4-DF8B-453A-A9C3-36274A216079}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KG02_inheritance", "KG02_inheritance\KG02_inheritance.csproj", "{F290FA92-4294-4DB5-B3A2-2563A947300C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiveCode", "LiveCode\LiveCode.csproj", "{F290FA92-4294-4DB5-B3A2-2563A947300C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KG01_Opgaver", "KG01_Opgaver\KG01_Opgaver.csproj", "{46C667DC-6D64-48B8-B478-04922FBA4439}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KG01Exercises", "KG01Exercises\KG01Exercises.csproj", "{46C667DC-6D64-48B8-B478-04922FBA4439}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibOOP", "LibOOP\LibOOP.csproj", "{852D4167-0E39-4548-A600-861A65FC474B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KG03Exercises", "KG03Exercises\KG03Exercises.csproj", "{2874877F-A9E7-4CC3-824D-ADAD58AFAA0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{852D4167-0E39-4548-A600-861A65FC474B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{852D4167-0E39-4548-A600-861A65FC474B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{852D4167-0E39-4548-A600-861A65FC474B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2874877F-A9E7-4CC3-824D-ADAD58AFAA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2874877F-A9E7-4CC3-824D-ADAD58AFAA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2874877F-A9E7-4CC3-824D-ADAD58AFAA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2874877F-A9E7-4CC3-824D-ADAD58AFAA0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

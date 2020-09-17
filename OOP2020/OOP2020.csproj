@@ -7,8 +7,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FigureSample\FigureSample.csproj" />
-    <ProjectReference Include="..\KG01_Opgaver\KG01_Opgaver.csproj" />
-    <ProjectReference Include="..\KG02_inheritance\KG02_inheritance.csproj" />
+    <ProjectReference Include="..\KG01Exercises\KG01Exercises.csproj" />
+    <ProjectReference Include="..\KG03Exercises\KG03Exercises.csproj" />
+    <ProjectReference Include="..\LiveCode\LiveCode.csproj" />
     <ProjectReference Include="..\LibOOP\LibOOP.csproj" />
   </ItemGroup>
 

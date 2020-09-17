@@ -1,7 +1,7 @@
 ﻿using LibOOP;
 using System;
 
-namespace KG01_Opgaver
+namespace KG01Exercises
 {
     class PersonPrinter
     {
@@ -85,7 +85,7 @@ namespace KG01_Opgaver
         public Person Mor { get; set; }
     }
 
-    public class KG01_løsning : IOpgaveløsning
+    public class KG01ExerciseSolution : IExerciseSolution
     {
         public void Run()
         {

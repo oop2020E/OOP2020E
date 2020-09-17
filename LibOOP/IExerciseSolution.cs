@@ -2,7 +2,7 @@
 
 namespace LibOOP
 {
-    public interface IOpgaveløsning
+    public interface IExerciseSolution
     {
         void Run();
     }

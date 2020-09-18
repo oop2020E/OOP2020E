@@ -22,7 +22,7 @@ namespace LiveCode.DeviceAnalogy
             #endregion
 
 
-            Take3.Computer c3 = new Take3.Computer();
+            //Take3.Computer c3 = new Take3.Computer();
         }
     }
 }

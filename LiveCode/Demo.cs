@@ -2,44 +2,121 @@
 using System.Collections.Generic;
 namespace LiveCode
 {
-    public class Demo
-    {
+
+    //interface IA
+    //{
+    //    void foo();
+    //}
+
+    //interface IB
+    //{
+    //    void foo();
+    //}
+
+    //class C : IA, IB
+    //{
+    //    public void foo()
+    //    {
+
+    //    }
+    //    void IB.foo()
+    //    {
+
+    //    }
+    //}
+
+
+        class Car : INoisy
+        {
+            public string Name { get; }
+
+            public void MakeNoise()
+            {
+                Console.WriteLine("wroom");
+            }
+        }
+
+        interface INamable
+        {
+            string Name { get; }
+        }
+
+        interface INoisy
+        { 
+            string Name { get; }
+            void MakeNoise();
+        }
+
+        interface IPet:INamable, INoisy,IComparable { }
 
         #region Inheritance example
-        //TODO 099, Inheritance, Animal-example, object
-        class Cat
+
+        abstract class Pet
         {
+            protected Pet(string name)
+            {
+                Name = name;
+            }
             public string Name { get; set; }
+        }
+
+        //TODO 099, Inheritance, Animal-example, object
+        class Cat : Pet, INoisy {
+            public void MakeNoise()
+            {
+                Meow();
+            }
+            public Cat(string navn) :base(navn)
+            {
+            }
             public void Meow() { }
         }
 
-        class Dog
+        class Dog: Pet, INoisy
         {
-            public string Name { get; set; }
+            public Dog(string d1) :base(d1)
+            {
+            }
+
             public void Bark() { }
+            public void MakeNoise()
+            {
+                Bark();
+            }
         }
 
         class Ex00
         {
+
+            void Kick(INoisy n)
+            {
+                n.MakeNoise();
+            }
             void Run()
             {
-                List<Cat> cats = new List<Cat>();
-                cats.Add(new Cat());
-                cats.Add(new Cat());
+                Kick(new Cat("K2"));
+                Kick(new Car());
 
-                List<Dog> dogs = new List<Dog>();
-                dogs.Add(new Dog());
-                dogs.Add(new Dog());
+                int[] v = new int [10];
+                List<int> l = new List<int>();
+                Queue<int> q;
+
+
+
+                List<INoisy> pets = new List<INoisy>();
+                pets.Add(new Cat("k1"));
+                pets.Add(new Cat("k2"));
+                pets.Add(new Dog("D1"));
+                pets.Add(new Dog("d2"));
+                pets.Add(new Car());
+
+                INoisy nn = pets[0];
 
                 Console.WriteLine("My pets");
-                foreach (var dog in dogs)
+                foreach (INoisy n in pets)
                 {
-                    Console.WriteLine(dog.Name);
-                }
-
-                foreach (var cat in cats)
-                {
-                    Console.WriteLine(cat.Name);
+                    Console.WriteLine(n.Name);
+                    n.MakeNoise();
                 }
             }
         }
@@ -85,5 +162,6 @@ namespace LiveCode
         //TODO
 
 
-    }
+    
+
 }

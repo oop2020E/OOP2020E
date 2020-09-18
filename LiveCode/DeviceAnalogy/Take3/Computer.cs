@@ -16,32 +16,34 @@ namespace LiveCode.DeviceAnalogy.Take3
     class ThunderboltDevice
     {
 
-    
 
-    class ExternalDrive : UsbDevice
-    {
 
-    }
-
-    class Mouse : UsbDevice
-    {
-
-    }
-    class Computer
-    {
-        public void PluginUsbDevice(UsbDevice dev)
+        class ExternalDrive : UsbDevice
         {
 
         }
-    }
 
-    class Ex
-    {
-        void foo()
+        class Mouse : UsbDevice
         {
-            Computer c = new Computer();
-            c.PluginUsbDevice(new Mouse());
-            c.PluginUsbDevice(new ExternalDrive());
+
+        }
+
+        class Computer
+        {
+            public void PluginUsbDevice(UsbDevice dev)
+            {
+
+            }
+        }
+
+        class Ex
+        {
+            void foo()
+            {
+                Computer c = new Computer();
+                c.PluginUsbDevice(new Mouse());
+                c.PluginUsbDevice(new ExternalDrive());
+            }
         }
     }
 }

@@ -15,8 +15,8 @@ namespace LiveCode.DeviceAnalogy.Take3
 
     class ThunderboltDevice
     {
+    }
 
-    
 
     class ExternalDrive : UsbDevice
     {

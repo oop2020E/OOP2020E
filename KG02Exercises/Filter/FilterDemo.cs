@@ -3,22 +3,6 @@ using LibOOP;
 
 namespace KG02Exercises.Filter
 {
-    class Person
-    {
-        public Person(string navn)
-        {
-            Navn = navn;
-        }
-        public string Navn { get; set; }
-    }
-
-    class Employee : Person
-    {
-        public string Title { get; set; }
-        public Employee(string navn) : base(navn)
-        {
-        }
-    }
     public class FilterDemo : IExerciseSolution
     {
         public void Run()

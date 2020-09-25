@@ -4,6 +4,25 @@ using System.IO;
 
 namespace LiveCode
 {
+
+    class PersonException : Exception
+    {
+        protected PersonException(string message)
+        {
+            
+
+        }
+    }
+    class NameFormatException : PersonException
+    {
+        public NameFormatException(string message) : base(message)
+        {
+            
+        }
+
+        
+    }
+
     public class Demo 
     {
         // TODO opgaver fra sidst
@@ -26,7 +45,7 @@ namespace LiveCode
                 pc.Add(new Person());
 
             }
-            catch(Exception e)
+            catch (Exception e)
             {
 
             }

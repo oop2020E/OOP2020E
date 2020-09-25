@@ -2,6 +2,9 @@
 {
     class WeekdayRate : ParkingRate
     {
-        public override decimal CalculateRate() => 3;
+        public override decimal CalculateRate()
+        {
+            return 3;
+        }
     }
 }

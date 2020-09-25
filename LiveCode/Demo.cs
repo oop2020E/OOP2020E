@@ -1,89 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+
 namespace LiveCode
 {
-    public class Demo
+    public class Demo 
     {
+        // TODO opgaver fra sidst
 
-        #region Inheritance example
-        //TODO 099, Inheritance, Animal-example, object
-        class Cat
-        {
-            public string Name { get; set; }
-            public void Meow() { }
-        }
+        //EXAMPLE 10 throw existing exceptions -- ArgumentException and derivatives, nameof etc
+        //EXAMPLE 20 throw custom exceptions -- NameMustStartWithCapitalLetterException
+        //EXAMPLE 30 catching exceptions, all, specific, rethrow
+        //EXAMPLE
 
-        class Dog
-        {
-            public string Name { get; set; }
-            public void Bark() { }
-        }
+        
 
-        class Ex00
+
+        public void Run()
         {
-            void Run()
+            try
             {
-                List<Cat> cats = new List<Cat>();
-                cats.Add(new Cat());
-                cats.Add(new Cat());
+                DiskDb db = new DiskDb();
+                PersonCatalog pc = new PersonCatalog(db);
 
-                List<Dog> dogs = new List<Dog>();
-                dogs.Add(new Dog());
-                dogs.Add(new Dog());
+                pc.Add(new Person());
 
-                Console.WriteLine("My pets");
-                foreach (var dog in dogs)
-                {
-                    Console.WriteLine(dog.Name);
-                }
-
-                foreach (var cat in cats)
-                {
-                    Console.WriteLine(cat.Name);
-                }
             }
-        }
-
-        #endregion
-
-
-
-
-        #region DataChannel
-
-
-        //TODO 100 multiple inheritance
-        abstract class DataChannel
-        {
-            public abstract void Send(byte[] data);
-            public abstract byte[] Recv();
-        }
-
-        abstract class Connection
-        {
-            public abstract void Connnect();
-            public abstract void Disconnect();
-        }
-
-
-
-        class ResourceManager
-        {
-            public void Manage(Connection c) { }
-        }
-
-        class MyChatProgram
-        {
-            public MyChatProgram(DataChannel c)
+            catch(Exception e)
             {
-                byte[] data = c.Recv();
+
             }
+
         }
-
-        #endregion
-
-        //TODO
-
-
     }
 }

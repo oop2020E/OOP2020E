@@ -4,33 +4,37 @@ using System.IO;
 
 namespace LiveCode
 {
+    class Person : IComparable<Person>
+    {
+        public string NAvn { get; set; }
+
+        public int CompareTo(Person other)
+        {
+            return NAvn.CompareTo(other.NAvn);
+        }
+    }
+
     public class Demo 
     {
-        // TODO opgaver fra sidst
-
-        //EXAMPLE 10 throw existing exceptions -- ArgumentException and derivatives, nameof etc
-        //EXAMPLE 20 throw custom exceptions -- NameMustStartWithCapitalLetterException
-        //EXAMPLE 30 catching exceptions, all, specific, rethrow
-        //EXAMPLE
-
-        
-
-
         public void Run()
         {
-            try
-            {
-                DiskDb db = new DiskDb();
-                PersonCatalog pc = new PersonCatalog(db);
+            TreeNode<int> inttree = new TreeNode<int>();
+            TreeNode<string> strTree = new TreeNode<string>();
 
-                pc.Add(new Person());
+            string[] sarr = new string[10];
+            int[] intarr = new int[10];
+            Methods methods = new Methods();
+            methods.Init(sarr, "");
+            methods.Init(intarr, 5);
 
-            }
-            catch(Exception e)
-            {
 
-            }
+            List<Person> ps = new List<Person>();
+            ps.Add(new Person() { NAvn = "Thomas" });
+            Person max = methods.Max(ps);
 
+            Pair<List<int>, List<string>> v;
+
+           // IComparable<char> maxchar = methods.Max<IComparable<char>>((IEnumerable<IComparable<char>>)(new List<IComparable<char>> { 'a', 'b', 'c' }));
         }
     }
 }

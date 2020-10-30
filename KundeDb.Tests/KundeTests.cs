@@ -5,18 +5,7 @@ using System;
 namespace KundeDb.Tests
 {
 
-    interface IFoo
-    {
-        bool IsCorrect();
-    }
 
-    class Hest
-    {
-        public bool Vrinsk(IFoo foo)
-        {
-            return foo.IsCorrect();
-        }
-    }
 
     [TestClass]
     public class KundeTests

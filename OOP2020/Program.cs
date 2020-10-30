@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using FigureSample;
 using KG01Exercises;
 using LiveCode;
-
+using NSubstitute;
 
 namespace OOP2020
 {
@@ -16,7 +16,7 @@ namespace OOP2020
             //cp.Run();
             //KG01ExerciseSolution løsning = new KG01ExerciseSolution();
             //løsning.Run();
-            new Demo().Run();
+            //new Demo().Run();
         }
     }
 }

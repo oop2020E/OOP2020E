@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NSubstitute" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FigureSample\FigureSample.csproj" />
     <ProjectReference Include="..\KG01Exercises\KG01Exercises.csproj" />
     <ProjectReference Include="..\KG03Exercises\KG03Exercises.csproj" />

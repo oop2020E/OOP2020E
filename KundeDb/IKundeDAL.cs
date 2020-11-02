@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace KundeDb
 {
+
     public interface IKundeDAL
     {
         bool Create(Kunde nyKunde);

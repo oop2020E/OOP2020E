@@ -8,7 +8,7 @@ namespace KundeDb
         IKundeDAL _kundeDAL; //Data Access Layer - vores eksterne afhængighed
         List<Kunde> _lokaleKunder; //Lokalt indlæste kunder
 
-        public KundeAdministrationController() : this(new KundeEfDAL()) { } //Normalt bruger vi Entity Framework
+        public KundeAdministrationController() : this(new KundeEfDAL()) { } 
 
         public KundeAdministrationController(IKundeDAL kundeDAL)
         {

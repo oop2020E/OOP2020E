@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KundeDb.Tests", "KundeDb.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KG06Exercises", "KG06Exercises\KG06Exercises.csproj", "{514A71C1-355B-4807-A86E-6818E7B73B42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KG07Exercises", "KG07Exercises\KG07Exercises.csproj", "{0C9B3781-4601-4AD4-95F1-5C8262ACEFF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KG07Exercises", "KG07Exercises\KG07Exercises.csproj", "{0C9B3781-4601-4AD4-95F1-5C8262ACEFF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KG07ExercisesTests", "KG07ExercisesTests\KG07ExercisesTests.csproj", "{812F9B5F-E787-426C-88CA-6EBCD8B24AE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KG07ExercisesTests", "KG07ExercisesTests\KG07ExercisesTests.csproj", "{812F9B5F-E787-426C-88CA-6EBCD8B24AE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KG08Exercises", "KG08Exercises\KG08Exercises.csproj", "{8E80C834-C1DF-4A71-93EC-0EB2DD9F31D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{812F9B5F-E787-426C-88CA-6EBCD8B24AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{812F9B5F-E787-426C-88CA-6EBCD8B24AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{812F9B5F-E787-426C-88CA-6EBCD8B24AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E80C834-C1DF-4A71-93EC-0EB2DD9F31D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E80C834-C1DF-4A71-93EC-0EB2DD9F31D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E80C834-C1DF-4A71-93EC-0EB2DD9F31D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E80C834-C1DF-4A71-93EC-0EB2DD9F31D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

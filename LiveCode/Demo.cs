@@ -1,84 +1,77 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
+using System.Net;
+using System.Text;
 
 namespace LiveCode
 {
-        public class Demo 
+    /*
+0	        1	       2	      3 	        4           	5       	6	        7               	8       	9
+productID productName supplierID categoryID  quantityPerUnit unitPrice   unitsInStock unitsOnOrder    reorderLevel discontinued
+0	            1	       2     3	        4	            5	         6  	7	    8	  9 	    10  	11	    12  	13      	14  	15  	16  	17
+employeeID lastName    firstName title   titleOfCourtesy birthDate   hireDate address city region  postalCode country homePhone extension   photo notes   reportsTo photoPath
+
+    */
+    public class Products // productID,productName,supplierID,categoryID,quantityPerUnit,unitPrice,unitsInStock,unitsOnOrder,reorderLevel,discontinued
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public decimal  UnitPrice { get; set; }
+        //etc
+    }
+
+    public class Employee //employeeID,lastName,firstName,title,titleOfCourtesy,birthDate,hireDate,address,city,region,postalCode,country,homePhone,extension,photo,notes,reportsTo,photoPath
+    {
+        public int Id { get; set; }
+        public string Lastname { get; set; }
+        public string Firstname { get; set; }
+        public string Title { get; set; }
+        public string City { get; set; }
+        public string PostalCode { get; set; }
+        public string Country { get; internal set; }
+    }
+
+    public class Demo
     {
 
-        public List<int> PlusZip(List<int> la, List<int> lb)
+        const string EmployeesUrl = "https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/csv/employees.csv";
+        const string ProductsUrl = "https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/csv/products.csv";
+
+        #region UrlReading
+        public IEnumerable<string> DownloadAsLines(Uri url)
         {
-            Debug.Assert(la.Count == lb.Count); // assume same length lists
-
-            List<int> result = new List<int>();
-
-            for (int i = 0; i < la.Count; i++)
+            WebClient wc = new WebClient();
+            return BytesToLines(wc.DownloadData(url));                        
+        }
+        private IEnumerable<string> BytesToLines(byte[] bytes)
+        {
+            var result = new List<string>();
+            using (StreamReader sr = new StreamReader(new MemoryStream(), Encoding.Default))
             {
-                result.Add(la[i] + lb[i]);
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                    result.Add(line);
             }
             return result;
         }
-
-        public List<int> MinusZip(List<int> la, List<int> lb)
-        {
-            Debug.Assert(la.Count == lb.Count); // assume same length lists
-
-            List<int> result = new List<int>();
-
-            for (int i = 0; i < la.Count; i++)
-            {
-                result.Add(la[i] - lb[i]);
-            }
-            return result;
-        }
-
-
-
-        #region Delegates
-        public delegate int IntDelegate(int a, int b);
-
-        int Plus(int v1, int v2)
-        {
-            return v1 + v2;
-        }
-        int Minus(int v1, int v2)
-        {
-            return v1 - v2;
-        }
-
-        public List<int> Zip(List<int> la, List<int> lb, IntDelegate f)
-        {
-            Debug.Assert(la.Count == lb.Count); // assume same length lists
-
-            List<int> result = new List<int>();
-
-            for (int i = 0; i < la.Count; i++)
-            {
-                result.Add(f(la[i], lb[i]));
-            }
-            return result;
-        }
-
         #endregion
+
+        public IEnumerable<string> ReadLinesFromFile(string f)
+        {
+            return File.ReadAllLines(f);
+        }
+
+        public IEnumerable<Employee> Employees => ReadLinesFromFile("employees.csv").Skip(1).Select(s => s.Split(',')).Select(arrayToEmployee);
+
+        Employee arrayToEmployee(string[] sa) => new Employee() { Id = int.Parse(sa[0]), City = sa[8], Firstname = sa[2], Lastname = sa[1], PostalCode = sa[10], Title = sa[3], Country = sa[11] };
 
         public void Run()
         {
-            List<int> n1 = new List<int> { 1, 2, 3, 4 };
-            List<int> n2 = new List<int> { 2, 3, 4, 5 };
-
-
-            List<int> result = MinusZip(n1, n2);
-
-
-
-            PrettyPrintList(result);
-        }
-
-        public void PrettyPrintList<T>(List<T> l)
-        {
-            Console.WriteLine($"[{string.Join(",",l)}]");
+            
         }
     }
 }

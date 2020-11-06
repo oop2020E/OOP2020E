@@ -65,7 +65,7 @@ employeeID lastName    firstName title   titleOfCourtesy birthDate   hireDate ad
             return File.ReadAllLines(f);
         }
 
-        public IEnumerable<Employee> Employees => ReadLinesFromFile("employees.csv").Skip(1).Select(s => s.Split(',')).Select(arrayToEmployee);
+        //public IEnumerable<Employee> Employees => ReadLinesFromFile("employees.csv")
 
         Employee arrayToEmployee(string[] sa) => new Employee() { Id = int.Parse(sa[0]), City = sa[8], Firstname = sa[2], Lastname = sa[1], PostalCode = sa[10], Title = sa[3], Country = sa[11] };
 

@@ -10,63 +10,97 @@ using System.Text;
 
 namespace LiveCode
 {
-    //interface 
 
-    interface ICommand
+    //• concepts and concept formation in object-oriented programming
+    //• classes, methods, interfaces, abstract classes and generic variants
+    class Person
     {
-        void Execute();
+        public string Navn { get; set; }
+        public Person Far { get; }
+        public Person person { get; }
     }
 
-    class Controllable
+    interface IPair<TFst, TSnd>
     {
-        private void Refresh()
-        {
-            Console.Clear();
 
-            Console.SetCursorPosition(10, pos);
-            Console.WriteLine("X");
-        }
-        public ICommand MoveUpCommand => new MoveUpCommandImpl(this);
-        public ICommand MoveDownCommand => new MoveDownCommandImpl(this);
+    }
+    class Pair<TFst, TSnd> : IPair<TFst, TSnd>
+    {
 
-        int pos = 0;
+    }
 
-        private class MoveUpCommandImpl : ICommand
-        {
-            private Controllable controllable;
+    //• scope rules and visibility
 
-            public MoveUpCommandImpl(Controllable controllable)
-            {
-                this.controllable = controllable;
-            }
-
-            public void Execute()
-            {
-                controllable.pos++;
-            }
-        }
-
-        private class MoveDownCommandImpl : ICommand
-        {
-            private Controllable controllable;
-
-            public MoveDownCommandImpl(Controllable controllable)
-            {
-                this.controllable = controllable;
-            }
-
-            public void Execute()
-            {
-                controllable.pos--;
-            }
+    class PersonCatalog{
+        private List<Person> Data;
+        public void Clear() {
+            Data.Clear(); // Data is in scope
+            // Person.Far is not
         }
     }
+
+
+    //• instance and class members
+    //• inheritance
+
+    class Employee : Person
+    {
+        private static int _idc = 0; // class member
+        private int id = ++_idc;     // instance member
+    }
+
+//• exceptions
+
+    class Manager : Employee
+    {
+        public void Manage(Employee e)
+        {
+            if (e == null)
+                throw new ArgumentNullException(nameof(e));
+        }
+    }
+
+//• polymorphism
 
     class App
     {
+        public void Run()
+        {
+            Employee e = new Employee();
 
+            Manager m = new Manager();
+
+            Manager boss = new Manager();
+
+            m.Manage(e);
+            boss.Manage(m); // managers are also employees
+            boss.Manage(e);
+        }
+
+        void PrintName(Employee e) // static polymorphism
+        {
+            Console.WriteLine(e.Navn);
+        }
+        void PrintName(Manager e)
+        {
+            Console.WriteLine("**** "+e.Navn+" ****");
+        }
     }
+/*• encapsulation and abstraction
+• standard library object-oriented design, architecture and principles
+• design patterns
+• specialization, implementation and delegation
 
+
+    // design patterns, collections and throughout the course
+*/
+//• structured test
+    // unit-testing
+
+//• documentation
+    /// <summary>
+    /// Not covered, no worries
+    /// </summary>
 
     public class Demo
     {
